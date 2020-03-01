@@ -1,0 +1,60 @@
+{
+    "type": "metricInfoListResult",
+    "limitExceeded": false,
+    "size": 4,
+    "items": [
+        {
+            "type": "metricInfo",
+            "id": "LM+x2NyLXO8F65dccs5fkhNbw/ZTxmX3uMpfRR9OH8k=",
+            "scopeId": "AQ",
+            "clientId": "dev1",
+            "channel": "example1/t1/data",
+            "name": "temp1",
+            "metricType": "double",
+            "firstMessageId": "c8994f5d-80ca-4b52-869f-25f6ad59a3f2",
+            "firstMessageOn": "2020-03-01T14:24:37.183Z",
+            "lastMessageId": "ce86632d-d236-496f-a1e3-645fb6e12177",
+            "lastMessageOn": "2020-03-01T16:05:24.182Z"
+        },
+        {
+            "type": "metricInfo",
+            "id": "aXEpa5CJyJ9JecVYv3I/aW0jov4Limc0TEW1IWyw0V0=",
+            "scopeId": "AQ",
+            "clientId": "dev1",
+            "channel": "example1/t2/data",
+            "name": "temp1",
+            "metricType": "double",
+            "firstMessageId": "beaacf0b-e3d2-4deb-ae0e-35273a3e504b",
+            "firstMessageOn": "2020-03-01T14:24:38.182Z",
+            "lastMessageId": "ce86632d-d236-496f-a1e3-645fb6e12177",
+            "lastMessageOn": "2020-03-01T16:05:24.182Z"
+        },
+        {
+            "type": "metricInfo",
+            "id": "OyU+eN442pw/766butYpF3kYIJNtL1A77pLTkfrI4gE=",
+            "scopeId": "AQ",
+            "clientId": "dev1",
+            "channel": "example1/t1/data",
+            "name": "temp2",
+            "metricType": "double",
+            "firstMessageId": "c8994f5d-80ca-4b52-869f-25f6ad59a3f2",
+            "firstMessageOn": "2020-03-01T14:24:37.183Z",
+            "lastMessageId": "ce86632d-d236-496f-a1e3-645fb6e12177",
+            "lastMessageOn": "2020-03-01T16:05:24.182Z"
+        },
+        {
+            "type": "metricInfo",
+            "id": "vAhiIJvF63DzPuEbJuRIiJMdir2wluaDk6s2+WB1o7I=",
+            "scopeId": "AQ",
+            "clientId": "dev1",
+            "channel": "example1/t2/data",
+            "name": "temp2",
+            "metricType": "double",
+            "firstMessageId": "beaacf0b-e3d2-4deb-ae0e-35273a3e504b",
+            "firstMessageOn": "2020-03-01T14:24:38.182Z",
+            "lastMessageId": "ce86632d-d236-496f-a1e3-645fb6e12177",
+            "lastMessageOn": "2020-03-01T16:05:24.182Z"
+        }
+    ],
+    "totalCount": 4
+}

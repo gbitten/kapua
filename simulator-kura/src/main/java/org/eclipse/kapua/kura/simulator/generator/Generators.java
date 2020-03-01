@@ -17,6 +17,8 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.function.ToDoubleFunction;
+import java.util.Random;
+
 
 import org.eclipse.kapua.kura.simulator.app.Application;
 import org.eclipse.kapua.kura.simulator.app.ApplicationContext;
@@ -26,7 +28,13 @@ import org.eclipse.kapua.kura.simulator.app.data.SimplePeriodicGenerator;
 
 public final class Generators {
 
+    private static Random rnd = new Random();
+
     private Generators() {
+    }
+
+    public static Function<Instant, Double> binary() {
+        return timestamp -> Double.valueOf(rnd.nextInt(1));
     }
 
     public static Function<Instant, Double> sine(final Duration period, final double amplitude, final double offset, final Short shift) {

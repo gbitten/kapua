@@ -1,2 +1,3 @@
 org.eclipse.kapua.kura.simulator.generator.basic.SineGeneratorFactory
+org.eclipse.kapua.kura.simulator.generator.basic.BinaryGeneratorFactory
 org.eclipse.kapua.kura.simulator.generator.basic.StraightPositionGeneratorFactory

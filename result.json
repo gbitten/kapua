@@ -1,0 +1,15 @@
+{
+    "type":"accessToken",
+    "id":"IRMvTEQnYO8",
+    "scopeId":"AQ",
+    "createdOn":"2020-02-24T13:33:47.491Z",
+    "createdBy":"AQ",
+    "modifiedOn":"2020-02-24T13:33:47.491Z",
+    "modifiedBy":"AQ",
+    "optlock":1,
+    "tokenId":"eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL3d3dy5lY2xpcHNlLm9yZy9rYXB1YSIsImlhdCI6MTU4MjU1MTIyNywiZXhwIjoxNTgyNTUzMDI3LCJzdWIiOiJBUSIsInNJZCI6IkFRIn0.YPIdM6n_nEmKwHi2w3AEd3mmW6tQcOJv8IBCk2LE9ir8p-k1Nz4rn3KR_X7HgJ7n5LoIxk-gdW0skihBSwa91rxXHPFrcvhto8efgt14bpuy-AqWTQND8TQH_77v8A1_abDF3SzSR-e4TKM1VzzZEoqt9MJU_Utn2jyYN8EnI9MUSrG2yIyYKkR0Ccyrut4gv3lMvWsK7gH2kwmtdSic7igJvZFkX2wWw2mKrXSNuHbEXp8cbdcHshxb2XO5U5Om1KVSEdITCDrBvn2gt0axWNC1FD8tqXsM6VvJUo3rW2ddmiHgX_tq5S2pN057mt6neAMMugyd7OJZs1i6pmxrDkRUEqXUxChlVEbDVkBm3SMu2f76WGBfq8HzPeJ3sTrArtoZCTnIBNdETpxAaRFlyjDisblBTaZ2zciEv6eRDWgx3EMsZksdDOtYap8w0g_bnoDM07vpLqh0RVuQSDvV6dq7eLx_wFb1mGJfFzQMbePicmoIUDUs3f-nA7yhbPIUM8IRrcjLr_1oXQUvXgFzVQX7uSqHqT0CipYraYDSHOWyy7MR4D6oiA8KF-GBQQQJTUapCxbMUBe4ZCJYXAXVaW8nHvKZz4QMwFraHJAI6DlVvXSdkTXEsTYU78kbspz3BHefq0YIRIY6OAKzXeS8gfXPbj_Lu49s0mlZVdh4_XQ",
+    "userId":"AQ",
+    "expiresOn":"2020-02-24T14:03:47.452Z",
+    "refreshToken":"5c4277b9-3f33-4293-9092-988dee67cb62",
+    "refreshExpiresOn":"2020-02-24T18:33:47.452Z"
+}

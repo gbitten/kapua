@@ -1,0 +1,39 @@
+{
+    "applications": {
+        "cond1": {
+            "scheduler": { "period": 1000 },
+            "topics": {
+                "caixa1": {
+                    "positionGenerator": "spos",
+                    "metrics": {
+                        "nivel1": { "generator": "binary1", "name": "value" },
+                        "nivel2": { "generator": "binary2", "name": "value" }
+                    }
+                },
+                "caixa2": {
+                    "metrics": {
+                        "nivel1": { "generator": "binary3", "name": "value" },
+                        "nivel2": { "generator": "binary4", "name": "value" }
+                    }
+                }
+            },
+            "generators": {
+                "binary1": {
+                    "type": "binary"
+                },
+                "binary2": {
+                    "type": "binary"
+                },
+                "binary3": {
+                    "type": "binary"
+                },
+                "binary4": {
+                    "type": "binary"
+                },
+                "spos": {
+                    "type": "spos"
+                }
+            }
+        }
+    }
+}
