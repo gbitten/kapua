@@ -34,7 +34,7 @@ public final class Generators {
     }
 
     public static Function<Instant, Double> binary() {
-        return timestamp -> Double.valueOf(rnd.nextInt(1));
+        return timestamp -> Double.valueOf(rnd.nextInt(2));
     }
 
     public static Function<Instant, Double> sine(final Duration period, final double amplitude, final double offset, final Short shift) {
