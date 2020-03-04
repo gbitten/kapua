@@ -3,14 +3,14 @@
         "cond1": {
             "scheduler": { "period": 1000 },
             "topics": {
-                "caixa1": {
+                "caixa1/s001": {
                     "positionGenerator": "spos",
                     "metrics": {
                         "nivel1": { "generator": "binary1", "name": "value" },
                         "nivel2": { "generator": "binary2", "name": "value" }
                     }
                 },
-                "caixa2": {
+                "caixa2/s001": {
                     "metrics": {
                         "nivel1": { "generator": "binary3", "name": "value" },
                         "nivel2": { "generator": "binary4", "name": "value" }
