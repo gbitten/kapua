@@ -1,19 +1,25 @@
 {
     "applications": {
-        "cond1": {
+        "Novo Leblon": {
             "scheduler": { "period": 1000 },
             "topics": {
-                "caixa1/s001": {
+                "Caixa de água/Nível da água": {
                     "positionGenerator": "spos",
                     "metrics": {
-                        "nivel1": { "generator": "binary1", "name": "value" },
-                        "nivel2": { "generator": "binary2", "name": "value" }
+                        "Nível_alto": { "generator": "binary1", "name": "value" },
+                        "Nível_baixo": { "generator": "binary2", "name": "value" }
                     }
                 },
-                "caixa2/s001": {
+                "Cisterna/Nível da água": {
                     "metrics": {
-                        "nivel1": { "generator": "binary3", "name": "value" },
-                        "nivel2": { "generator": "binary4", "name": "value" }
+                        "Nível_alto": { "generator": "binary3", "name": "value" },
+                        "Nível_média": { "generator": "binary4", "name": "value" },
+                        "Nível_baixo": { "generator": "binary5", "name": "value" }
+                    }
+                },
+                "Gás/Detector de vazamento": {
+                    "metrics": {
+                        "Vazamento": { "generator": "binary6", "name": "value" }
                     }
                 }
             },
@@ -28,6 +34,55 @@
                     "type": "binary"
                 },
                 "binary4": {
+                    "type": "binary"
+                },
+                "binary5": {
+                    "type": "binary"
+                },
+                "binary6": {
+                    "type": "binary"
+                },
+                "spos": {
+                    "type": "spos"
+                }
+            }
+        },
+        "Nova Ipanema": {
+            "scheduler": { "period": 1000 },
+            "topics": {
+                "Caixa de água/Nível da água": {
+                    "positionGenerator": "spos",
+                    "metrics": {
+                        "Nível_alto": { "generator": "binary7", "name": "value" },
+                        "Nível_baixo": { "generator": "binary8", "name": "value" }
+                    }
+                },
+                "Gás/Vazamento": {
+                    "metrics": {
+                        "Status": { "generator": "binary9", "name": "value" }
+                    }
+                },
+                "Porteiro eletrônico/Status": {
+                    "metrics": {
+                        "DVR": { "generator": "binary10", "name": "value" },
+                        "Conexão": { "generator": "binary11", "name": "value" }
+                    }
+                }
+            },
+            "generators": {
+                "binary7": {
+                    "type": "binary"
+                },
+                "binary8": {
+                    "type": "binary"
+                },
+                "binary9": {
+                    "type": "binary"
+                },
+                "binary10": {
+                    "type": "binary"
+                },
+                "binary11": {
                     "type": "binary"
                 },
                 "spos": {
