@@ -17,13 +17,11 @@ services:
       - transport.host=_site_
       - transport.ping_schedule=-1
       - transport.tcp.connect_timeout=30s
-      - "ES_JAVA_OPTS=-Xms8m -Xmx128m"
   events-broker:
     image: kapua/kapua-events-broker:${IMAGE_VERSION}
     ports:
       - 5672:5672
     environment:
-      - "ES_JAVA_OPTS=-Xms8m -Xmx128m"
   broker:
     image: kapua/kapua-broker:${IMAGE_VERSION}
     ports:
@@ -42,11 +40,10 @@ services:
       - KAPUA_KEY_PASSWORD
       - KAPUA_KEYSTORE
       - KAPUA_KEYSTORE_PASSWORD
-      - "ES_JAVA_OPTS=-Xms8m -Xmx128m"
   kapua-console:
     image: kapua/kapua-console:${IMAGE_VERSION}
     ports:
-      - 8080:8080
+      - 9090:8080
       - 8443:8443
     depends_on:
       - broker
@@ -61,7 +58,6 @@ services:
       - KAPUA_KEY_PASSWORD
       - KAPUA_KEYSTORE
       - KAPUA_KEYSTORE_PASSWORD
-      - "ES_JAVA_OPTS=-Xms8m -Xmx128m"
   kapua-api:
     image: kapua/kapua-api:${IMAGE_VERSION}
     ports:
@@ -80,4 +76,3 @@ services:
       - KAPUA_KEY_PASSWORD
       - KAPUA_KEYSTORE
       - KAPUA_KEYSTORE_PASSWORD
-      - "ES_JAVA_OPTS=-Xms8m -Xmx128m"
