@@ -21,7 +21,6 @@ services:
     image: kapua/kapua-events-broker:${IMAGE_VERSION}
     ports:
       - 5672:5672
-    environment:
   broker:
     image: kapua/kapua-broker:${IMAGE_VERSION}
     ports:
@@ -43,7 +42,7 @@ services:
   kapua-console:
     image: kapua/kapua-console:${IMAGE_VERSION}
     ports:
-      - 9090:8080
+      - 8888:8080
       - 8443:8443
     depends_on:
       - broker
