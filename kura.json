@@ -1,25 +1,27 @@
 {
     "applications": {
         "Novo Leblon": {
-            "scheduler": { "period": 1000 },
+            "scheduler": { "period": 5000 },
             "topics": {
                 "Caixa de água/Nível da água": {
                     "positionGenerator": "spos",
                     "metrics": {
-                        "Nível_alto": { "generator": "binary1", "name": "value" },
-                        "Nível_baixo": { "generator": "binary2", "name": "value" }
+                        "Nível alto": { "generator": "binary1", "name": "value" },
+                        "Nível baixo": { "generator": "binary2", "name": "value" },
+                        "Status": { "generator": "status1", "name": "value" }
                     }
                 },
                 "Cisterna/Nível da água": {
                     "metrics": {
-                        "Nível_alto": { "generator": "binary3", "name": "value" },
-                        "Nível_média": { "generator": "binary4", "name": "value" },
-                        "Nível_baixo": { "generator": "binary5", "name": "value" }
+                        "Nível alto": { "generator": "binary3", "name": "value" },
+                        "Nível médio": { "generator": "binary4", "name": "value" },
+                        "Nível baixo": { "generator": "binary5", "name": "value" },
+                        "Status": { "generator": "status2", "name": "value" }
                     }
                 },
                 "Gás/Detector de vazamento": {
                     "metrics": {
-                        "Vazamento": { "generator": "binary6", "name": "value" }
+                        "Status": { "generator": "status3", "name": "value" }
                     }
                 }
             },
@@ -42,30 +44,41 @@
                 "binary6": {
                     "type": "binary"
                 },
+                "status1": {
+                    "type": "binary"
+                },
+                "status2": {
+                    "type": "binary"
+                },
+                "status3": {
+                    "type": "binary"
+                },
                 "spos": {
                     "type": "spos"
                 }
             }
         },
         "Nova Ipanema": {
-            "scheduler": { "period": 1000 },
+            "scheduler": { "period": 5000 },
             "topics": {
                 "Caixa de água/Nível da água": {
                     "positionGenerator": "spos",
                     "metrics": {
                         "Nível_alto": { "generator": "binary7", "name": "value" },
-                        "Nível_baixo": { "generator": "binary8", "name": "value" }
+                        "Nível_baixo": { "generator": "binary8", "name": "value" },
+                        "Status": { "generator": "binary9", "name": "value" }
                     }
                 },
                 "Gás/Vazamento": {
                     "metrics": {
-                        "Status": { "generator": "binary9", "name": "value" }
+                        "Status": { "generator": "binary12", "name": "value" }
                     }
                 },
-                "Porteiro eletrônico/Status": {
+                "Porteiro eletrônico/Componentes": {
                     "metrics": {
                         "DVR": { "generator": "binary10", "name": "value" },
-                        "Conexão": { "generator": "binary11", "name": "value" }
+                        "Conexão": { "generator": "binary11", "name": "value" },
+                        "Status": { "generator": "binary13", "name": "value" }
                     }
                 }
             },
@@ -83,6 +96,12 @@
                     "type": "binary"
                 },
                 "binary11": {
+                    "type": "binary"
+                },
+                "binary12": {
+                    "type": "binary"
+                },
+                "binary13": {
                     "type": "binary"
                 },
                 "spos": {
