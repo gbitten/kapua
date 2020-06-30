@@ -33,8 +33,8 @@ public final class Generators {
     private Generators() {
     }
 
-    public static Function<Instant, Double> binary() {
-        return timestamp -> Double.valueOf(rnd.nextInt(2));
+    public static Function<Instant, Integer> binary() {
+        return timestamp -> Integer.valueOf(rnd.nextInt(2));
     }
 
     public static Function<Instant, Double> sine(final Duration period, final double amplitude, final double offset, final Short shift) {
@@ -65,6 +65,10 @@ public final class Generators {
     }
 
     public static Function<Instant, Map<String, Object>> fromSingle(final String name, final Function<Instant, Double> function) {
+        return function.andThen(value -> Collections.singletonMap(name, value));
+    }
+
+    public static Function<Instant, Map<String, Object>> fromSingleInteger(final String name, final Function<Instant, Integer> function) {
         return function.andThen(value -> Collections.singletonMap(name, value));
     }
 

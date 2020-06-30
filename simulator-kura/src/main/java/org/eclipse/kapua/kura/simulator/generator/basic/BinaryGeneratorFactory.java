@@ -25,6 +25,6 @@ public class BinaryGeneratorFactory extends AbstractGeneratorFactory {
 
     @Override
     protected Optional<Generator> createFrom(final Map<String, Object> configuration) {
-        return Optional.of(Generator.onlyMetrics(Generators.fromSingle("value", Generators.binary())));
+        return Optional.of(Generator.onlyMetrics(Generators.fromSingleInteger("value", Generators.binary())));
     }
 }
